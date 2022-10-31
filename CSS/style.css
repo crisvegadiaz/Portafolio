@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'menlo-regular';
+    src: url(../fonts/Menlo/Menlo-Regular/Menlo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jet-breins-mono';
+    src: url(../fonts/JetBreinsMono/fonts/ttf/JetBrainsMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'mononoki-regular';
+    src: url(../fonts/Mononoki/mononoki-Regular\ Nerd\ Font\ Complete.ttf);
+}
+
+:root {
+    --color-negro: #0a1124;
+    --color-blanco: #e6dcbe;
+    --color-gris: #2d2b55;
+    --color-verde: #28ff9b;
+    --color-celeste: #00ffff;
+    --color-rosa: #fc5dff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.base {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}

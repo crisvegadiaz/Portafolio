@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--color-rosa);
+}
+
+.footer__titulo {
+    color: var(--color-negro);
+    font-family: menlo-regular;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer__susTitulo {
+    color: var(--color-negro);
+    font-family: menlo-regular;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}

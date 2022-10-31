@@ -1,0 +1,126 @@
+.perfil {
+    margin: 0 16px 2rem;
+}
+
+.perfil__imagen {
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+
+.perfil__titulo {
+    font-family: menlo-regular;
+    font-size: 1.7rem;
+    margin: 2rem 0;
+}
+
+.perfil__texto {
+    font-family: mononoki-regular;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+/* enlaces */
+.perfil__botones {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.perfil__boton {
+    align-items: center;
+    background-color: var(--color-celeste);
+    border: solid 4px var(--color-gris);
+    border-radius: 25%;
+    display: flex;
+    flex-direction: column;
+    font-size: menlo-regular;
+    height: 6rem;
+    justify-content: center;
+    text-decoration: none;
+    width: 6rem;
+}
+
+.boton__img {
+    width: 40px;
+}
+
+.boton__texto {
+    color: var(--color-negro);
+    font-family: Jet-breins-mono;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* reponsivo tablet */
+@media screen and (min-width:758px) {
+    .perfil {
+        display: grid;
+        grid-template-areas:
+            "titulo     img"
+            "texto      img"
+            "botones    img"
+        ;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        height: 40vh;
+    }
+
+    .perfil__imagen {
+        grid-area: img;
+        height: 200px;
+        width: 200px;
+    }
+
+    .perfil__titulo {
+        grid-area: titulo;
+    }
+
+    .perfil__texto {
+        grid-area: texto;
+    }
+
+    .perfil__botones {
+        grid-area: botones;
+    }
+}
+
+/* reponsivo desktop */
+@media screen and (min-width:1280px) {
+    .perfil {
+        height: 75vh;
+        margin: 0 9rem;
+    }
+
+    .perfil__imagen {
+        height: 260px;
+        width: 260px;
+    }
+
+    .perfil__titulo {
+        font-size: 2.2rem;
+    }
+
+    .perfil__texto {
+        font-size: 1.5rem;
+    }
+    .perfil__botones{
+        justify-content: flex-start;
+    }
+    .perfil__boton {
+        border-radius: 1rem;
+        flex-direction: row;
+        height: 4rem;
+        margin-right: 4rem;
+        width: 12rem;
+    }
+
+    .boton__img {
+        margin-right: 1rem;
+        width: 2rem;
+    }
+
+    .boton__texto {
+        font-size: 1.2rem;
+    }
+}

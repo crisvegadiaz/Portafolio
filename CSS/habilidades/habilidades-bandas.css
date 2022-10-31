@@ -1,0 +1,56 @@
+.habilidadesBandas {
+    margin: 2rem 16px;
+}
+
+.habilidadesBandas__titulo {
+    font-family: menlo-regular;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.habilidadesBandas__tipos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.habilidadesBandas__tipo {
+    align-items: center;
+    background: var(--color-gris);
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    font-family: Jet-breins-mono;
+    font-size: 1rem;
+    height: 9rem;
+    justify-content: center;
+    margin: 0.5rem;
+    width: 9rem;
+}
+
+.habilidadesBandas__img {
+    background-color: var(--color-celeste);
+    border-radius: 20%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 3rem;
+}
+
+/* reponsivo desktop */
+@media screen and (min-width:1280px) {
+    
+    .habilidadesBandas {
+        margin: 2rem 12rem;
+    }
+
+    .habilidadesBandas__tipo {
+        align-items: flex-start;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        height: 12rem;
+        padding: 1rem;
+        width: 14rem;
+    }
+}

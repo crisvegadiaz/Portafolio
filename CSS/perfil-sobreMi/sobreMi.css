@@ -1,0 +1,29 @@
+.sobreMi {
+    background: var(--color-gris);
+    padding: 2rem 0;
+}
+
+.sobreMi__titulo {
+    font-family: menlo-regular;
+    font-size: 1.7rem;
+    margin: 1rem 16px;
+}
+
+.sobreMi__texto {
+    font-family: mononoki-regular;
+    font-size: 1.2rem;
+    margin: 0 16px;
+}
+
+/* reponsivo desktop */
+@media screen and (min-width:1280px) {
+    .sobreMi__titulo {
+        margin: 1rem 9rem;
+    }
+
+    .sobreMi__texto {
+        font-size: 1.4rem;
+        margin: 0 9rem;
+        width: 60%;
+    }
+}

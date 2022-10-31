@@ -1,0 +1,50 @@
+.cabecera {
+    align-items: baseline;
+    display: flex;
+    height: 5rem;
+    justify-content: baseline;
+}
+
+.cabecera__logo {
+    height: 46px;
+    margin: 10px;
+    width: 5rem;
+}
+
+.cabecera__titulo {
+    align-self: center;
+    color: var(--color-texto);
+    font-family: menlo-regular;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/* reponsivo tablet */
+@media screen and (min-width:758px) {
+    .cabecera {
+        align-items: center;
+        height: 5rem;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.3rem;
+        width: 30rem;
+    }
+
+    .cabecera__logo {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+/* reponsivo desktop */
+@media screen and (min-width:1280px) {
+    .cabecera {
+        background-color: var(--color-gris);
+        border-bottom: 2px solid var(--color-verde);
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        position: sticky;
+        top: 0;
+    }
+}

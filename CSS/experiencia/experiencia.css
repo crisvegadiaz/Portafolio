@@ -1,0 +1,114 @@
+.experiencia {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia__titulo {
+    font-family: menlo-regular;
+    font-size: 1.6rem;
+    margin: 4rem 0;
+}
+
+.experiencia__iten {
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.experiencia__img {
+    border-radius: 10px;
+    box-shadow: -1px -1px 6px var(--color-celeste), 4px 4px 16px 2px var(--color-rosa);
+    height: 14rem;
+    margin-bottom: 2rem;
+    width: 21rem;
+}
+
+.experiencia__name {
+    font-family: Jet-breins-mono;
+    margin-bottom: 1rem;
+}
+
+.experiencia__tipo {
+    font-family: mononoki-regular;
+    margin-bottom: 1rem;
+}
+
+.experiencia__botones {
+    margin: 2rem 0;
+}
+
+.experiencia__botones a {
+    border: 2px solid var(--color-verde);
+    border-radius: 20px;
+    color: var(--color-verde);
+    font-family: Jet-breins-mono;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.experiencia__botones a:nth-child(2) {
+    background-color: var(--color-verde);
+    color: var(--color-negro);
+}
+
+/* reponsivo tablet*/
+@media screen and (min-width:758px) {
+
+    .experiencia__img {
+        height: 20rem;
+        width: 40rem;
+    }
+
+    .experiencia__name {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .experiencia__tipo {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* reponsivo desktop */
+@media screen and (min-width:1280px) {
+    .experiencia__titulo {
+        font-size: 2rem;
+    }
+
+    .experiencia__iten {
+        align-items: center;
+        column-gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4rem;
+    }
+
+    .experiencia__iten:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .experiencia__contenido {
+        margin: 0 4rem;
+        text-align: center;
+        width: 30rem;
+    }
+
+    .experiencia__img {
+        height: 20rem;
+        width: 40rem;
+    }
+
+    .experiencia__name {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .experiencia__tipo {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
